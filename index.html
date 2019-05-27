@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 13px;
+            color: white;
+            text-align: center;
+            /* a的高定了 */
+            line-height: 30px;
+            height: 100%;
+            width: 100%;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            margin: 20px auto;
+            width: 300px;
+            height: 30px;
+            font-size: 0px;
+        }
+
+        .nav {
+            width: 100px;
+            height: 30px;
+            box-sizing: border-box;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+            vertical-align: top;
+        }
+
+        .nav a {
+            background: linear-gradient(#3d3838, #999999)
+        }
+
+        .nav a:hover {
+            border-left: 5px solid #999999;
+            background: black;
+        }
+
+        li.nav:hover ul>li {
+            transform: rotateY(0deg);
+        }
+
+        .nav:hover {
+            overflow: visible;
+        }
+
+        .nav ul {
+            position: absolute;
+            top: 30px;
+            left: 0;
+            width: 100px;
+        }
+        .nav ul li {
+            transform: rotateY(90deg);
+            transition: transform 0.5s;
+        }
+        .nav ul li:nth-of-type(2) {
+            transition-delay: 0.1s;
+        }
+        .nav ul li:nth-of-type(3) {
+            transition-delay: 0.2s;
+        }
+        .nav ul li:nth-of-type(4) {
+            transition-delay: 0.3s;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <ul>
+            <li class="nav">
+                <a href="#">首页</a>
+            </li>
+            <li class="nav">
+                <a href="#">AAA</a>
+                <ul class="subNav">
+                    <li><a href="#"> 111</a></li>
+                    <li><a href="#"> 222</a></li>
+                    <li><a href="#"> 333</a></li>
+                    <li><a href="#"> 444</a></li>
+                </ul>
+            </li>
+            <li class="nav">
+                <a href="#">BBB</a>
+                <ul class="subNav">
+                    <li><a href="#"> 111</a></li>
+                    <li><a href="#"> 222</a></li>
+                    <li><a href="#"> 333</a></li>
+                    <li><a href="#"> 444</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+    </script>
+</body>
+
+</html>
